@@ -1,6 +1,7 @@
 import React, {Component, useState, useEffect} from 'react';
 import {View, SafeAreaView, TouchableOpacity} from 'react-native';
 import { Container, Header, Content, List, ListItem, Text } from 'native-base';
+import { Font } from 'expo';
 
 
 import Toolbar from '../../components/Toolbar'

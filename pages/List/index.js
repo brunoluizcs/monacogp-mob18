@@ -5,6 +5,7 @@ import RaceList from '../../components/RaceList'
 import DriveList from '../../components/DriverList'
 
 import Toolbar from '../../components/Toolbar'
+import { Font } from 'expo';
 
 
 export default ({navigation}) => {

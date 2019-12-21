@@ -3,6 +3,7 @@ import {View, Text, TouchableOpacity} from 'react-native';
 import {ListItem} from 'native-base';
 
 import {withNavigation} from 'react-navigation';
+import { Font } from 'expo';
 
 const Item = ({item, navigation}) => {
   const handleNavigation = season => {

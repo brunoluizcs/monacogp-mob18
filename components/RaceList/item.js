@@ -3,6 +3,7 @@ import {TouchableOpacity} from 'react-native';
 import {ListItem, Text} from 'native-base';
 
 import {withNavigation} from 'react-navigation';
+import { Font } from 'expo';
 
 const Item = ({item, navigation}) => {
   const handleNavigation = race => {

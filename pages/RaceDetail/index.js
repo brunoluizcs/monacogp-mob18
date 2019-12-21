@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Content, Card, CardItem, Body, Text } from 'native-base';
 import Toolbar from '../../components/Toolbar'
+import { Font } from 'expo';
 
 
 export default ({navigation}) => {

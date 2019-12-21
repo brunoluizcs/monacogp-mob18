@@ -2,6 +2,7 @@ import React from 'react';
 import {View, TouchableOpacity} from 'react-native';
 import { Container, Content, Card, CardItem, Body, Text } from 'native-base';
 import Toolbar from '../../components/Toolbar';
+import { Font } from 'expo';
 
 
 export default ({navigation}) => {

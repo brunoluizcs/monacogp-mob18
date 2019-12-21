@@ -1,6 +1,7 @@
 import React from 'react';
 import {TouchableOpacity} from 'react-native';
 import {ListItem, Text} from 'native-base';
+import { Font } from 'expo';
 
 
 import {withNavigation} from 'react-navigation';

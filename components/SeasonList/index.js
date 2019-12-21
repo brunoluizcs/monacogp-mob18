@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {Text, FlatList} from 'react-native';
 
-import Item from './Item';
+import Item from './item.js';
+import { Font } from 'expo';
 
 const SeasonList = props => {
   

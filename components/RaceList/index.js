@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import {Text, FlatList} from 'react-native';
 
-import Item from './Item';
+import Item from './item.js';
 import api,{servicesAPIs} from '../../services/api';
+import { Font } from 'expo';
 
 const RaceList = props => {
   const [loading, setLoading] = useState(true);
