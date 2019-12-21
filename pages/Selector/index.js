@@ -1,5 +1,7 @@
 import React from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, TouchableOpacity} from 'react-native';
+import { Container, Content, Card, CardItem, Body, Text } from 'native-base';
+import Toolbar from '../../components/Toolbar';
 
 
 export default ({navigation}) => {
@@ -12,23 +14,36 @@ export default ({navigation}) => {
 
   return (
     <>
-      <View>
-        <Text>Temporada - {season.season}</Text>
+    <Container>
+        <Toolbar title={'Temporada -' + season.season} navigation={navigation} />
+        <Content>
+          <Card>
+            <CardItem>
+              <Body>
+                <TouchableOpacity
+                    onPress={() => {
+                      handleNavigation(season.season,"race");
+                    }}>
+                    <Text>Corridas</Text>
+                </TouchableOpacity>
+              </Body>
+            </CardItem>
+          </Card>
 
-        <TouchableOpacity
-          onPress={() => {
-            handleNavigation(season.season,"race");
-          }}>
-          <Text>Corridas</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity
-          onPress={() => {
-            handleNavigation(season.season,"drive");
-          }}>
-          <Text>Pilotos </Text>
-        </TouchableOpacity>
-      </View>
+          <Card>
+            <CardItem>
+              <Body>
+                <TouchableOpacity
+                  onPress={() => {
+                    handleNavigation(season.season,"drive");
+                  }}>
+                  <Text>Pilotos </Text>
+                </TouchableOpacity>
+              </Body>
+            </CardItem>
+          </Card>
+        </Content>
+      </Container>
     </>
   );
 };

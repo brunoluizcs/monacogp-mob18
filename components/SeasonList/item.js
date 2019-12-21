@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
+import {ListItem} from 'native-base';
 
 import {withNavigation} from 'react-navigation';
 
@@ -10,14 +11,15 @@ const Item = ({item, navigation}) => {
   };
 
   return (
-    <View>
-      <TouchableOpacity
-        onPress={() => {
-          handleNavigation(item);
-        }}>
-        <Text>{item.season}</Text>
-      </TouchableOpacity>
-    </View>
+      <ListItem>
+        <TouchableOpacity
+          onPress={() => {
+            handleNavigation(item);
+          }}>
+          <Text>{item.season}</Text>
+        </TouchableOpacity>
+      </ListItem>
+    
   );
 };
 

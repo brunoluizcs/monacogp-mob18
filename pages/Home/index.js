@@ -1,6 +1,9 @@
 import React, {Component, useState, useEffect} from 'react';
-import {View, Text, SafeAreaView, ScrollView, TouchableOpacity} from 'react-native';
+import {View, SafeAreaView, TouchableOpacity} from 'react-native';
+import { Container, Header, Content, List, ListItem, Text } from 'native-base';
 
+
+import Toolbar from '../../components/Toolbar'
 import SeasonList from '../../components/SeasonList'
 import Loader from '../../components/Loader';
 import api, {servicesAPIs} from '../../services/api';
@@ -23,12 +26,15 @@ const Home = props => {
   }, []);
 
   return (
-    <SafeAreaView>
-      <ScrollView>
-        {loading == true ? <Loader loading={true} /> : <></>}
-        <SeasonList seasons={seasons} />
-      </ScrollView>
-    </SafeAreaView>
+    <Container>
+        <Toolbar title={'Temporadas'} hideBackButton={true}/>
+        <Content>
+          {loading == true ? <Loader loading={true} /> : <></>}
+          <List>
+            <SeasonList seasons={seasons} />
+          </List>
+        </Content>
+      </Container>
   );
 };
 
