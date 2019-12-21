@@ -12,6 +12,14 @@ API
 * [Nativebase](https://nativebase.io/) `npm install native-base –-save`
 * Para usuários de MacOS é necessário instalar o Watchman caso não esteja instalado `brew install watchman`
 
+<img src="https://github.com/brunoluizcs/monacogp-mob18/blob/master/prints/print1.jpeg" width="311" height="640" />
+<img src="https://github.com/brunoluizcs/monacogp-mob18/blob/master/prints/print2.jpeg" width="311" height="640" />
+<img src="https://github.com/brunoluizcs/monacogp-mob18/blob/master/prints/print3.jpeg" width="311" height="640" />
+<img src="https://github.com/brunoluizcs/monacogp-mob18/blob/master/prints/print4.jpeg" width="311" height="640" />
+
+
+
+
 
 
 
